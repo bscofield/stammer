@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "stammer"
-  s.version  = "0.0.1"
+  s.version  = "0.0.2"
   s.date     = "2008-09-19"
   s.summary  = "Super-simple wrapper for the Yammer API"
   s.email    = "ben.scofield@viget.com"

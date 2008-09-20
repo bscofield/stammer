@@ -5,6 +5,8 @@ Rakefile
 lib/stammer.rb
 lib/stammer/client.rb
 lib/stammer/exceptions.rb
+lib/stammer/message.rb
+lib/stammer/message_list.rb
 stammer.gemspec
 tasks/ann.rake
 tasks/bones.rake

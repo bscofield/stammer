@@ -18,7 +18,7 @@ module Stammer
     end
     
     def messages(subset = nil)
-      send_request('messages', subset)
+      MessageList.new(send_request('messages', subset))
     end
 
     private
