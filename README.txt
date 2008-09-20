@@ -4,22 +4,31 @@ stammer
 
 == DESCRIPTION:
 
-FIXME (describe your package)
+This is meant to be a simple wrapper around the Yammer API - give it a username and password,
+and it'll return messages visible to that account. For details on the API, look at 
+http://www.yammer.com/company/api_doc
 
 == FEATURES/PROBLEMS:
 
-* FIXME (list of features or problems)
+TODO
+* handle client keys
+* paginate messages (currently only returns the last 20 of whatever set is requested)
+* post/delete messages
+* implement non-message aspects of the API - e.g., users, tags, subscriptions
 
 == SYNOPSIS:
 
   require 'rubygems'
   require 'stammer'
   
-  stammer = Stammer.new()
+  stammer = Stammer.new('user@example.com', 'password')
+  messages = stammer.messages
+  sent_messages = stammer.messages('sent')
 
 == REQUIREMENTS:
 
 * Net::HTTP
+* JSON
 
 == INSTALL:
 
