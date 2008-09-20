@@ -3,6 +3,9 @@ Manifest.txt
 README.txt
 Rakefile
 lib/stammer.rb
+lib/stammer/client.rb
+lib/stammer/exceptions.rb
+stammer.gemspec
 tasks/ann.rake
 tasks/bones.rake
 tasks/gem.rake
@@ -13,7 +16,7 @@ tasks/post_load.rake
 tasks/rdoc.rake
 tasks/rubyforge.rake
 tasks/setup.rb
-tasks/spec.rake
 tasks/svn.rake
 tasks/test.rake
-test/test_stammer.rb
+test/test_client.rb
+test/test_helper.rb
