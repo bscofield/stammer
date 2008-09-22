@@ -17,8 +17,18 @@ module Stammer
       end
     end
     
+    # TODO: pagination via older_than/newer_than
     def messages(subset = nil)
       MessageList.new(send_request('messages', subset))
+    end
+    
+    # TODO: pagination via page
+    def users(id = nil)
+      UserList.new(send_request('users', id))
+    end
+    
+    def tags(id = nil)
+      TagList.new(send_request('tags', id))
     end
 
     private
