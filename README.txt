@@ -21,7 +21,7 @@ TODO
   require 'rubygems'
   require 'stammer'
   
-  stammer = Stammer.new('user@example.com', 'password')
+  stammer = Stammer::Client.new('user@example.com', 'password')
   messages = stammer.messages
   sent_messages = stammer.messages('sent')
 

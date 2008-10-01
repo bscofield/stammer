@@ -15,7 +15,7 @@ module Stammer
     def ytb?
       !(self.plain =~ /^(today|blocker|yesterday)/).nil?
     end
-
+    
     def plain
       self['body']['plain']
     end
@@ -23,5 +23,7 @@ module Stammer
     def created
       Time.parse(self['created_at'])
     end
+    
+    alias :body :plain
   end
 end

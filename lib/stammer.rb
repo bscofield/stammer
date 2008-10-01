@@ -1,9 +1,5 @@
 # $Id$
 
-# Equivalent to a header guard in C/C++
-# Used to prevent the class/module from being loaded more than once
-unless defined? Stammer
-
 module Stammer
 
   # :stopdoc:
@@ -50,7 +46,3 @@ module Stammer
 end  # module Stammer
 
 Stammer.require_all_libs_relative_to __FILE__
-
-end  # unless defined?
-
-# EOF
