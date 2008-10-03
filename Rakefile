@@ -7,7 +7,7 @@ load 'tasks/setup.rb'
 ensure_in_path 'lib'
 require 'stammer'
 
-task :default => 'spec:run'
+task :default => 'test:run'
 
 PROJ.name = 'stammer'
 PROJ.authors = 'Ben Scofield of Viget Labs'
